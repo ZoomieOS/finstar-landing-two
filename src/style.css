@@ -11,24 +11,35 @@
     --font-display: "Montserrat", sans-serif;
 
     --color-primary: rgba(0, 91, 104, 1);
+
     --color-header-btn: rgba(9, 56, 44, 1);
-    --color-heading: rgba(3, 151, 87, 1);
-    --color-hero-btn: rgba(3, 151, 87, 1);
+
+    --color-heading: rgba(32, 84, 179, 1);
+    --color-hero-btn: rgba(0, 130, 237, 1);
+
     --color-background-card: rgba(239, 249, 255, 1);
-    --color-cards-advantages: rgba(236, 246, 231, 1);
-    --color-advantages-subheading: rgba(3, 151, 87, 1);
-    --color-why-us-left: rgba(242, 246, 231, 1);
-    --color-why-us-right: rgba(238, 245, 255, 1);
+
+    --color-cards-advantages: rgba(238, 243, 253, 1);
+    --color-advantages-subheading: rgba(90, 101, 147, 1);
+
+    --color-why-us-subheading: rgba(83, 123, 18, 1);
+    --color-why-us-left: rgba(239, 255, 228, 1);
+    --color-why-us-right: rgba(239, 255, 253, 1);
+    --color-why-us-button: rgba(83, 123, 18, 1);
+
     --color-card-two-special-text: rgba(127, 17, 0, 1);
     --color-card-three-special-text: rgba(0, 127, 88, 1);
     --color-card-four-special-text: rgba(202, 131, 8, 1);
+
     --color-card-one: rgba(249, 249, 249, 1);
-    --color-card-two: rgba(249, 249, 249, 1);
-    --color-card-three: rgba(249, 249, 249, 1);
-    --color-card-four: rgba(249, 249, 249, 1);
-    --color-contact-form: rgba(38, 120, 152, 1);
-    --color-contact-form-shape: rgba(3, 82, 113, 1);
-    --color-footer: rgba(42, 51, 63, 1);
+    --color-card-two: rgba(248, 238, 255, 1);
+    --color-card-three: rgba(252, 245, 239, 1);
+    --color-card-four: rgba(255, 233, 231, 1);
+
+    --color-contact-form: rgba(131, 164, 79, 1);
+    --color-contact-form-shape: rgba(100, 137, 15, 1);
+
+    --color-footer: rgba(44, 37, 32, 1);
 }
 
 @layer utilities {
@@ -44,21 +55,23 @@
     .bg-glow-hero {
         top: -90%;
         left: -25%;
-        background: radial-gradient(50% 50% at 50% 50%, rgba(179, 220, 239, 0.7) 0%, rgba(179, 220, 239, 0) 100%);
+        background: radial-gradient(50% 50% at 50% 50%, rgba(239, 225, 179, 0.7) 0%, rgba(239, 225, 179, 0) 100%);
     }
 
     .bg-glow-advantages {
-        width: 200px;
-        height: 200px;
+        width: 500px;
+        height: 500px;
         top: 13%;
-        right: -4%;
-        background: radial-gradient(50% 50% at 50% 50%, rgba(157, 211, 255, 0.4) 0%, rgba(157, 211, 255, 0) 100%);
+        left: 4%;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(157, 211, 255, 0.9) 0%, rgba(157, 211, 255, 0) 100%);
     }
 
     .bg-glow-invests {
-        top: -20%;
-        left: -13%;
-        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 234, 157, 0.4) 0%, rgba(255, 234, 157, 0) 100%);
+        width: 200px;
+        height: 200px;
+        bottom: 10%;
+        right: 0;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(157, 211, 255, 0.7) 0%, rgba(157, 211, 255, 0) 100%);
     }
 
     .section-spacing {
