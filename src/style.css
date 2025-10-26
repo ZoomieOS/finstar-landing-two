@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+
+@theme {
+    --font-display: "Montserrat", sans-serif;
+
+    --color-primary: rgba(0, 91, 104, 1);
+    --color-header-btn: rgba(9, 56, 44, 1);
+    --color-heading: rgba(3, 151, 87, 1);
+    --color-hero-btn: rgba(3, 151, 87, 1);
+    --color-background-card: rgba(239, 249, 255, 1);
+    --color-cards-advantages: rgba(236, 246, 231, 1);
+    --color-advantages-subheading: rgba(3, 151, 87, 1);
+    --color-why-us-left: rgba(242, 246, 231, 1);
+    --color-why-us-right: rgba(238, 245, 255, 1);
+    --color-card-two-special-text: rgba(127, 17, 0, 1);
+    --color-card-three-special-text: rgba(0, 127, 88, 1);
+    --color-card-four-special-text: rgba(202, 131, 8, 1);
+    --color-card-one: rgba(249, 249, 249, 1);
+    --color-card-two: rgba(249, 249, 249, 1);
+    --color-card-three: rgba(249, 249, 249, 1);
+    --color-card-four: rgba(249, 249, 249, 1);
+    --color-contact-form: rgba(38, 120, 152, 1);
+    --color-contact-form-shape: rgba(3, 82, 113, 1);
+    --color-footer: rgba(42, 51, 63, 1);
+}
+
+@layer utilities {
+    .bg-glow {
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        z-index: -1;
+        filter: blur(70px);
+    }
+
+    .bg-glow-hero {
+        top: -90%;
+        left: -25%;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(179, 220, 239, 0.7) 0%, rgba(179, 220, 239, 0) 100%);
+    }
+
+    .bg-glow-advantages {
+        width: 200px;
+        height: 200px;
+        top: 13%;
+        right: -4%;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(157, 211, 255, 0.4) 0%, rgba(157, 211, 255, 0) 100%);
+    }
+
+    .bg-glow-invests {
+        top: -20%;
+        left: -13%;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 234, 157, 0.4) 0%, rgba(255, 234, 157, 0) 100%);
+    }
+
+    .section-spacing {
+        margin-top: 3.125rem;
+        margin-bottom: 3.125rem;
+    }
+}
+
+@layer base {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        @apply font-sans text-black;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        padding: 0;
+    }
+}
